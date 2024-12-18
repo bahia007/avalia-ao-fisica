@@ -1,0 +1,48 @@
+
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Rotina de Estudos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Estudos</h1>
+        <form id="study-form">
+            <div class="subject">
+                <label for="subject">Matéria/Área Estudada:</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="hours">
+                <label for="hours">Horas/Minutos Estudados:</label>
+                <input type="text" id="hours" name="hours" placeholder="Ex: 2h ou 30m" required>
+            </div>
+            <div class="days">
+                <label for="days">Dias da Semana:</label>
+                <select id="days" name="days" required>
+                    <option value="segunda">Segunda</option>
+                    <option value="terca">Terça</option>
+                    <option value="quarta">Quarta</option>
+                    <option value="quinta">Quinta</option>
+                    <option value="sexta">Sexta</option>
+                    <option value="sabado">Sábado</option>
+                    <option value="domingo">Domingo</option>
+                </select>
+            </div>
+            <div class="completed">
+                <label for="completed">Estudo Concluído:</label>
+                <input type="checkbox" id="completed" name="completed">
+            
+                </div>
+            <button type="submit">Registrar Estudo</button>
+        </form>
+        <div id="study-log">
+            <h2>Historico Semanal</h2>
+            <ul id="log-list"></ul>
+        </div>
+        <button id="clear-log-button">Limpar Registros</button>
+    </div>
+    <script src="script.js"></script>
+</body>
